@@ -1,82 +1,240 @@
 *{
   box-sizing: border-box;
 }
-.body{
-  background-color:#FFFFFF;
-  font-family:Proxima Nova, italic;
-  font-weight: 600;
-}
-.block {
-  display:flex;
-  width: 1366px;
-  height: 929px;
-  align-items: center;
-  justify-content: center;
-}
-.block_sm {
-  display:flex;
-  width: 1170px;
-  height: 756px;
-  flex-direction:column;
-}
-.block_heading {
-  display:flex;
-  height: 85px;
-  justify-content: center;
 
-}
-.block_related {
-font-size: 30px;
-color:#22262A;
-font-family:Proxima Nova, italic;
-font-weight: 900;
-
-}
-
-.block_apple{
-  display:flex;
-  height: 349px;
-  justify-content:space-between;
-}
-
-.block_zero{
- height: 20px;
-}
-.block_image{
-  display:flex;
-  border: 3px solid #F6F7F8;
-  width: 270px;
-  flex-direction:column;
-  align-items: center;
+.body {
+  font-family:"Roboto";
+  color: #202020;
   
 }
-.block_zero1{
-  height: 20px  
+
+@font-face {
+ font-family: "MuseoCyrl-900";
+ src: url("../fonts/MuseoCyrl-900.woff") format("woff"),
+      url("../fonts/MuseoCyrl-900.woff2") format("woff2");
+ font-weight: normal;
+ font-style: normal;
 }
-.block_zero2{
-  height: 40px
-}
-.block_ap_mac{
-  font-size: 14px;
-  font-style: color#262626;
-  height: 14px;
-  font-family: Proxima Nova, italic;
-  font-weight: 600;
-}
-.block_zero3{
-  height: 30px
-}
-.price{
-  font-size: 16px;
-  color:#FF4858;
-  font-family:Proxima Nova, italic;
-  font-weight: 600;
-}
-.reduz{
-  font-size: 16px;
-  color:#C1C8CE;
-  text-decoration: line-through;
-  font-family:Proxima Nova, italic;
-  font-weight: 600;
+@font-face {
+ font-family: "MuseoCyrl-300";
+ src: url("../fonts/MuseoCyrl-300.woff") format("woff"),
+      url("../fonts/MuseoCyrl-300.woff2") format("woff2");
+ font-weight: normal;
+ font-style: normal;
 }
 
+.header{
+  font-family:"Roboto";
+  padding: 22px 0;
+  background-color: #F1F1F1;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+}
+.logo{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav-link{
+  
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+.login {
+  
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/*Главная секция^*/
+.hero {
+  font-family:"Roboto";
+  padding-top: 62px;
+  padding-bottom: 71px;
+}
+.hero-container {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.hero-image {
+  margin-right: 122px;
+}
+.author {
+  
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+  
+}
+.title {
+  font-family: "MuseoCyrl-900";
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.subtitle {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 48px;
+}
+
+.info{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 49px;
+  
+}
+.info-text {
+  flex-basis: 45%;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.pricetag {
+  font-weight: 400;
+  font-size: 55px;
+  margin-right: 110px;
+}
+.favorites {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color:inherit;
+  /* inherit -  всять свойство у родителя; верхнего елемента
+   в этом случае у body */
+}
+.icon {
+  
+    margin-right: 5px;
+    
+
+}
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 22px 50px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.button-primary {
+  background-color: #f89c02;
+  color: #ffff;
+  margin-right: 20px;
+  cursor: pointer
+}
+.button-outline {
+  background-color: #f89c02;
+  color: #ffff;
+  text-decoration: none;
+}
+.button:hover{
+  background-color: #fff;
+  color:#202020;
+  border: 2px solid #f89c02;
+}
+/* Секция 2 о книге */
+.about-gray {
+ font-family:"Roboto";
+ background-color: #F1F1F1; 
+ margin-bottom: 71px;
+ height: 548px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: auto;
+  align-items:flex-start;
+  
+}
+.about_book {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #202020;
+  margin-top:85px
+}
+
+.div_about_book {
+  display: block;
+  margin-right: 122px;
+  width: 454px;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #202020;
+  line-height: 24px;
+  margin-bottom: 48px;
+}
+.artem {
+  display: flex;
+  min-width: 552px;
+  height: 347px;
+  background-color: #ffff;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0px 1px 120px 0px rgba(161,161,161,0.07);
+  border-radius: 10px;
+  margin-top: 95px;
+  flex-direction: column;
+}
+.div_top {
+  display: flex;
+}
+.div_block {
+  display: flex;
+}
+.hero_image {
+  margin-left: 50px;
+  margin-top: 70px;
+}
+.card_text {
+  margin-left: 21px;
+  color: #202020;
+  line-height: 1.2;
+}
+.artem_text {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 95px;
+}
+.artem_link {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+.div_below {
+  display: flex;
+}
+.zitat {
+  display: block;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 107px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #202020;
+
+}
